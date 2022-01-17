@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treasure Hunt</title>
+    <link rel="stylesheet" href="treasurehunt.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="https://www.nicepng.com/png/detail/150-1509179_wheres-waldo-png-wheres-waldo-no-background.png"
+    />
+  </head>
+  <body>
+    <div id="main" class="container">
+      <h1>Where's Waldo?</h1>
+      <h2>Find the treasure to win!</h2>
+      <div id="list">
+        <h3>Rules</h3>
+        <div class="space-around">
+          <ul>
+            <li>Click on the question marks...</li>
+            <li>If you find the wrong Waldo, you lose.</li>
+            <li>If you find the right Waldo, you win!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- <img
+      src="http://www.paperflite.com/sites/default/files/2020-01/WaldoBanner.jpg"
+      alt="Waldo Beach Background"
+    /> -->
+    <div class="container">
+      <div class="center">
+        Number of tries left:
+        <span id="counter">5</span>
+      </div>
+    </div>
+    <table class="container">
+      <tr>
+        <td id="0" onclick="treasure(0)">?</td>
+        <td id="1" onclick="treasure(1)">?</td>
+        <td id="2" onclick="treasure(2)">?</td>
+        <td id="3" onclick="treasure(3)">?</td>
+      </tr>
+      <tr>
+        <td id="4" onclick="treasure(4)">?</td>
+        <td id="5" onclick="treasure(5)">?</td>
+        <td id="6" onclick="treasure(6)">?</td>
+        <td id="7" onclick="treasure(7)">?</td>
+      </tr>
+      <tr>
+        <td id="8" onclick="treasure(8)">?</td>
+        <td id="9" onclick="treasure(9)">?</td>
+        <td id="10" onclick="treasure(10)">?</td>
+        <td id="11" onclick="treasure(11)">?</td>
+      </tr>
+      <tr>
+        <td id="12" onclick="treasure(12)">?</td>
+        <td id="13" onclick="treasure(13)">?</td>
+        <td id="14" onclick="treasure(14)">?</td>
+        <td id="15" onclick="treasure(15)">?</td>
+      </tr>
+    </table>
+    <div id="btn-container">
+      <button type="button" onclick="location.reload()">Restart Game</button>
+    </div>
+    <div class="container">
+      <footer>
+        Made By: Juan and Dane
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Where%27s_Wally%3F#:~:text=Where's%20Wally%3F%20(called%20Where's%20Waldo,things%20at%20a%20given%20location."
+          target="_blank"
+          rel="noopener noreferrer"
+          >Where's Waldo Wikipedia page</a
+        >
+      </footer>
+    </div>
+    <script type="text/javascript" src="treasurehunt.js" />
+  </body>
+</html>
